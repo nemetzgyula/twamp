@@ -9,6 +9,9 @@
  - sudo apt install python3 python3-pip
  - pip3 install python-dotenv
 
+### Add to cron:
+ - * * * * * /opt/twampy/run.sh
+
 ### V1.0: 2025.05.27
  - run twamp every minutes
  - Store data in database
