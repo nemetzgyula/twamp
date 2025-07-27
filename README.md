@@ -19,7 +19,10 @@
  - ./bin/pip3 install python-dotenv
  - ./bin/pip3 install pymysql
  - source /opt/twampy/python3/bin/activate
-
+ - Need to modify run.sh:
+   - From: python3 /opt/twampy/process.py
+   - To: /opt/twampy/python3/bin/python3 /opt/twampy/process.py
+  
 ### Add to cron: run script in every seconds
 #### * * * * * /opt/twampy/run.sh
 
