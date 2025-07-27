@@ -9,6 +9,17 @@
  - sudo apt install python3 python3-pip
  - pip3 install python-dotenv
 
+### If Python is not installed:
+ - apt-get update
+ - apt-get install python3
+
+### Run Python in virtual environment:
+ - python3 -m venv /opt/twampy/python3
+ - cd /opt/twampy/python3/
+ - ./bin/pip3 install python-dotenv
+ - ./bin/pip3 install pymysql
+ - source /opt/twampy/python3/bin/activate
+
 ### Add to cron: run script in every seconds
 #### * * * * * /opt/twampy/run.sh
 
