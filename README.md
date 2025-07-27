@@ -1,9 +1,11 @@
 # twamp
 ## Twamp protocol based monitoring script collection
 ### Automated install:
-  - download setup_twampy.sh
-  - chmod 755 setup_twampy.sh
-  - ./setup_twampy.sh
+  - download setup_twampy.sh install script to /opt/:
+    - cd /opt/
+    - wget https://github.com/nemetzgyula/twamp/blob/main/setup_twampy.sh
+    - chmod 755 setup_twampy.sh
+    - ./setup_twampy.sh
 
 ### Manual install instructions:
  - mkdir /opt/twampy
