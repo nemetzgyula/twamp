@@ -1,30 +1,35 @@
 # twamp
 ## Twamp protocol based monitoring script collection
-### Install instructions:
+### Automated install:
+  - download setup_twampy.sh
+  - chmod 755 setup_twampy.sh
+  - ./setup_twampy.sh
+
+### Manual install instructions:
  - mkdir /opt/twampy
  - cd /opt/twampy/
  -  git clone https://github.com/nokia/twampy
 
-### Install neccessary python modules (Python3):
- - sudo apt install python3 python3-pip
- - pip3 install python-dotenv
+#### Install neccessary python modules (Python3):
+   - sudo apt install python3 python3-pip
+   - pip3 install python-dotenv
 
-### If Python is not installed:
- - apt-get update
- - apt-get install python3
+#### If Python is not installed:
+   - apt-get update
+   - apt-get install python3
 
-### Run Python in virtual environment:
- - python3 -m venv /opt/twampy/python3
- - cd /opt/twampy/python3/
- - ./bin/pip3 install python-dotenv
- - ./bin/pip3 install pymysql
- - source /opt/twampy/python3/bin/activate
- - Need to modify run.sh:
-   - From: python3 /opt/twampy/process.py
-   - To: /opt/twampy/python3/bin/python3 /opt/twampy/process.py
+#### Run Python in virtual environment:
+   - python3 -m venv /opt/twampy/python3
+   - cd /opt/twampy/python3/
+   - ./bin/pip3 install python-dotenv
+   - ./bin/pip3 install pymysql
+   - source /opt/twampy/python3/bin/activate
+   - Need to modify run.sh:
+     - From: python3 /opt/twampy/process.py
+     - To: /opt/twampy/python3/bin/python3 /opt/twampy/process.py
   
-### Add to cron: run script in every seconds
-#### * * * * * /opt/twampy/run.sh
+#### Add to cron: run script in every seconds
+##### * * * * * /opt/twampy/run.sh
 
 ### Configure twamp script:
 - twamp_responder=87.229.6.134          //the IP address of the destination server
