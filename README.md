@@ -13,7 +13,7 @@
 #### * * * * * /opt/twampy/run.sh
 
 ### Configure twamp script:
-- twamp_responder=87.229.6.134     //the IP address of the destination server
+- twamp_responder=87.229.6.134          //the IP address of the destination server
 - packet_count=900                 //how many packets will sending)
 - timeout_in_ms=50                 //timeout in ms - set carefuly, have impact on sending time
 - result_file=/opt/twampy/log.txt  //Do not change
